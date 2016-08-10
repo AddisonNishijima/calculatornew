@@ -35,3 +35,23 @@ var result = (subtract(number1, number2));
 $("#outputsub").text(result);
   });
 });
+
+$(document).ready(function() {
+  $("form#multiply").submit(function(event) {
+    event.preventDefault();
+var number1 = parseInt($("#multiply1").val());
+var number2 = parseInt($("#multiply2").val());
+var result = (multiply(number1, number2));
+$("#outputmult").text(result);
+  });
+});
+
+$(document).ready(function() {
+  $("form#divide").submit(function(event) {
+    event.preventDefault();
+var number1 = parseInt($("#divide1").val());
+var number2 = parseInt($("#divide2").val());
+var result = (divide(number1, number2));
+$("#outputdiv").text(result);
+  });
+});
